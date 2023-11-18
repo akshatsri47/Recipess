@@ -1,0 +1,219 @@
+@import 'animate.css';
+
+body {
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+    padding: 20px 0;
+}
+
+p {
+    margin: 0 20px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bt {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    margin-left: 20px;
+    
+  }
+  
+  .bt::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .bt:hover::before {
+    scale: 4;
+  }
+  
+  .bt:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 2 2px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .bt:active {
+    scale: 1;
+  }
+  div {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+.input-container {
+    position: relative;
+  }
+  
+  .input {
+    font-size: 1em;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+    color: #333;
+  }
+  
+  .input:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input::placeholder {
+    color: #999;
+  }
+  
+  .highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6c63ff;
+    transition: width 0.3s ease;
+  }
+  
+  .input:focus + .highlight {
+    width: 100%;
+  }
+  
+  /* Optional: Animation on focus */
+  @keyframes input-focus {
+    from {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+  
+    to {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .input:focus {
+    animation: input-focus 0.3s ease;
+  }
+  
+  /* static/css/main.css */
+
+/* Add styling to the form fields and submit button */
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    background-color: lightcoral;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: lightcoral;
+}
+#center{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: 950px;
+}

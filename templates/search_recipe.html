@@ -1,0 +1,26 @@
+<!-- search_recipe.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Search Recipe</title>
+</head>
+<body>
+
+    <div></div>
+        <h1>Search Recipes</h1>
+        <form method="post" action="{{ url_for('search_recipe') }}">
+            
+            <div class="input-container">
+            <input type="text" name="search" required class="input">
+
+            <button type="submit" class="">Search</button>
+        
+        </form>
+        <br>
+    </div>
+        <a href="{{ url_for('index') }}"><button class="bt" id="center" style="margin-top: 40px; ">Home</button></a>
+    
+    </div>
+</body>
+</html>

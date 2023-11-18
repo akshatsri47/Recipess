@@ -1,0 +1,98 @@
+/* style.css */
+
+/* Reset some default browser styles */
+body, h1, p, button, form, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.title {
+    color: #ff6b6b;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.info {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.actions {
+    margin-top: 40px;
+}
+
+.action-link, .action-button {
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit {
+    background-color: #45aaf2;
+    color: #fff;
+}
+
+.delete {
+    background-color: #fc5185;
+    color: #fff;
+}
+
+.back {
+    color: #45aaf2;
+}
+
+.action-link:hover, .action-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.action-button:active {
+    animation-name: pulse;
+    animation-duration: 0.3s;
+}
+
+.edit {
+    margin-right: 10px; /* Adjusted margin between buttons */
+}
+
+.delete,
+.back {
+    margin-left: 10px; /* Adjusted margin between buttons */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
